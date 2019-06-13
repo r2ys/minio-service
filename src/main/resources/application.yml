@@ -1,0 +1,19 @@
+server:
+  port: 4000
+  undertow:
+    max-http-post-size: 104857600
+
+spring:
+  application:
+    name: @artifactId@
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+
+# 文件系统
+minio:
+  url: http://127.0.0.1:9000
+  access-key: 52BYO0BNRCXZ9K26REOQ
+  secret-key: QsGeA73S99ZuBP7mmcQt8yDhKW+APnafXe3nACJW
